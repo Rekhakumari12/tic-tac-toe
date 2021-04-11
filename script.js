@@ -46,9 +46,9 @@ function btnclick(id) {
 }
 
 function isDraw() {
-  let para = document.getElementById("para");
-  para.innerText = "Draw!";
-//   alert("Draw!")
+  // let para = document.getElementById("para");
+  // para.innerText = "Draw!";
+  alert("Draw!")
   let resetbtn = document.getElementById("reset");
   resetbtn.style.display = "inline";
 }
@@ -66,6 +66,7 @@ function reset() {
 
 function checkWinner() {
   if ((checkCondition('1', '2', '3')) || (checkCondition('4', '5', '6')) || (checkCondition('7', '8', '9')) || (checkCondition('1', '4', '7')) || (checkCondition('2', '5', '8')) || (checkCondition('3', '6', '9')) || (checkCondition('1', '5', '9')) || (checkCondition('3', '5', '7'))) {
+  //  console.log(checkCondition());
     return true;
   }
 }
