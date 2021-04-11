@@ -1,0 +1,34 @@
+.main button{
+  width:70px;
+  height:70px;
+  border:1px solid white;
+  background-color: #F22D2D;
+  border-radius:1px;
+  box-shadow: 5px 5px 5px 1px rgb(172, 168, 168);
+  font-size: 3rem;
+  color:honeydew;
+}
+.main{
+  width:10px;
+  margin:0 270px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.player{
+  margin: 0 auto;
+  text-align: center;
+}
+#para{
+  font-size:2rem;
+  font-weight: 800;
+  color:red;
+}
+#reset{
+  display: none;
+  margin:10px;
+  padding : 5px 10px;
+  color:black;
+  border: 1px solid yellowgreen;
+  border-radius: 3px;
+  background-color: yellow;
+}
