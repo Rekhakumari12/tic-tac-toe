@@ -1,5 +1,7 @@
 let count = 1;
 let currentTurn = "X";
+const Player1 = "p";
+const Player2 = O_Turn;
 let X_Turn = "X";
 let O_Turn = "O";
 
@@ -36,7 +38,8 @@ function btnclick(id) {
 
   }
   if (checkWinner()) {
-    let winner = (checkWinner() === "X") ? "Congratulations! Player2 wins" : "Congratulations! Player1 wins";
+    // console.log(checkWinner());
+    let winner = (checkWinner()) ? (currentTurn=="X")?"Congratulations! Player2 wins" : "Congratulations! Player1 wins":0;
     alert(winner);
     reset();
   }
@@ -45,6 +48,7 @@ function btnclick(id) {
 function isDraw() {
   let para = document.getElementById("para");
   para.innerText = "Draw!";
+//   alert("Draw!")
   let resetbtn = document.getElementById("reset");
   resetbtn.style.display = "inline";
 }
@@ -76,4 +80,3 @@ function checkCondition(id1, id2, id3) {
 function getData(id) {
   return document.getElementById(id).innerText;
 }
-
