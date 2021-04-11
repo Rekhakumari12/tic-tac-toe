@@ -9,8 +9,8 @@
   color:honeydew;
 }
 .main{
-  width:10px;
-  margin:0 270px;
+    width: 10px;
+    margin: 0 43%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
