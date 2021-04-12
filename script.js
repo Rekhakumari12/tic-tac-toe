@@ -37,7 +37,6 @@ function btnclick(id) {
   }
   if (checkWinner()) {
     let winner = (checkWinner()) ? (currentTurn == "X") ? "Congratulations! Player2 wins" : "Congratulations! Player1 wins" : 0;
-    alert(winner);
     reset();
   }
 }
