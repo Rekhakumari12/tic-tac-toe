@@ -19,7 +19,7 @@ h3{
   background-color: rgba(15, 173, 173, 0.808);
   padding: 30px;
   width:210px;
-  margin:0 270px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
