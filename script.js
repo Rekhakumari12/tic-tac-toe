@@ -1,7 +1,5 @@
 let count = 1;
 let currentTurn = "X";
-const Player1 = "p";
-const Player2 = O_Turn;
 let X_Turn = "X";
 let O_Turn = "O";
 
@@ -14,6 +12,7 @@ function btnclick(id) {
     if (count % 2 != 0) {
       if (currentTurn == X_Turn && filled !== "true") {
         button.innerText = "X";
+        button.style.color = "white";
         currentTurn = O_Turn;
         button.dataset.clicked = "true";
         count++;
@@ -26,6 +25,7 @@ function btnclick(id) {
     else {
       if (currentTurn == O_Turn && filled !== "true") {
         button.innerText = "O";
+        button.style.color = "rgb(167, 85, 52)";
         currentTurn = X_Turn;
         button.dataset.clicked = "true";
         count++;
@@ -38,17 +38,16 @@ function btnclick(id) {
 
   }
   if (checkWinner()) {
-    // console.log(checkWinner());
-    let winner = (checkWinner()) ? (currentTurn=="X")?"Congratulations! Player2 wins" : "Congratulations! Player1 wins":0;
-    alert(winner);
-    reset();
+    let winner = (checkWinner()) ? (currentTurn == "X") ? "Congratulations! Player2 wins" : "Congratulations! Player1 wins" : 0;
+    document.getElementById("para").innerText = winner;
+    document.getElementById("reset").style.display = "inline";
   }
 }
 
 function isDraw() {
-  // let para = document.getElementById("para");
-  // para.innerText = "Draw!";
-  alert("Draw!")
+  let para = document.getElementById("para");
+  para.innerText = "Draw!";
+  para.style.fontSize = "30px";
   let resetbtn = document.getElementById("reset");
   resetbtn.style.display = "inline";
 }
@@ -66,7 +65,6 @@ function reset() {
 
 function checkWinner() {
   if ((checkCondition('1', '2', '3')) || (checkCondition('4', '5', '6')) || (checkCondition('7', '8', '9')) || (checkCondition('1', '4', '7')) || (checkCondition('2', '5', '8')) || (checkCondition('3', '6', '9')) || (checkCondition('1', '5', '9')) || (checkCondition('3', '5', '7'))) {
-  //  console.log(checkCondition());
     return true;
   }
 }
