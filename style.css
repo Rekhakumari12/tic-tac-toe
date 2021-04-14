@@ -1,15 +1,24 @@
+html{
+  font-family: 'Dancing Script', cursive;
+}
 .main button{
   width:70px;
   height:70px;
-  border:1px solid white;
-  background-color: #F22D2D;
-  border-radius:1px;
-  box-shadow: 5px 5px 5px 1px rgb(172, 168, 168);
+  border:3px solid rgb(15, 90, 100);
+  background-color: transparent;
+  /* border-radius:1px; */
+  /* box-shadow: 5px 5px 5px 1px rgb(172, 168, 168); */
   font-size: 3rem;
-  color:honeydew;
+  color:black;
+  outline: none;
+}
+h3{
+  font-size: 30px;
 }
 .main{
-  width:10px;
+  background-color: rgba(15, 173, 173, 0.808);
+  padding: 30px;
+  width:210px;
   margin:0 270px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -19,16 +28,31 @@
   text-align: center;
 }
 #para{
-  font-size:2rem;
+  font-size:1rem;
   font-weight: 800;
-  color:red;
+  /* color:red; */
 }
 #reset{
   display: none;
   margin:10px;
-  padding : 5px 10px;
-  color:black;
-  border: 1px solid yellowgreen;
+  padding : 10px 27px;
+  color:white;
+  border: none;
   border-radius: 3px;
-  background-color: yellow;
+  background-color: rgb(43, 43, 41);
+}
+.resetButton{
+  text-align: center;
+}
+.cell1,.cell2,.cell3{
+  border-top:transparent!important;
+}
+.cell1,.cell4,.cell7{
+  border-left:transparent!important;
+}
+.cell3,.cell6,.cell9{
+  border-right:transparent!important;
+}
+.cell7,.cell8,.cell9{
+  border-bottom:transparent!important;
 }
