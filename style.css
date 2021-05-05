@@ -1,5 +1,9 @@
 html{
+<<<<<<< HEAD
   font-family: 'Patrick Hand', cursive;
+=======
+  font-family: 'Dancing Script', cursive;
+>>>>>>> ca6112a96b93d6aa9b4ef3fb92ae48724fa4c882
 }
 .main button{
   width:70px;
@@ -55,4 +59,8 @@ h3{
 }
 .cell7,.cell8,.cell9{
   border-bottom:transparent!important;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ca6112a96b93d6aa9b4ef3fb92ae48724fa4c882

@@ -12,7 +12,10 @@ function btnclick(id) {
     if (count % 2 != 0) {
       if (currentTurn == X_Turn && filled !== "true") {
         button.innerText = "X";
+<<<<<<< HEAD
         button.style.fontFamily="Patrick Hand, cursive";
+=======
+>>>>>>> ca6112a96b93d6aa9b4ef3fb92ae48724fa4c882
         button.style.color = "white";
         currentTurn = O_Turn;
         button.dataset.clicked = "true";
@@ -26,7 +29,10 @@ function btnclick(id) {
     else {
       if (currentTurn == O_Turn && filled !== "true") {
         button.innerText = "O";
+<<<<<<< HEAD
         button.style.fontFamily="Patrick Hand, cursive";
+=======
+>>>>>>> ca6112a96b93d6aa9b4ef3fb92ae48724fa4c882
         button.style.color = "rgb(167, 85, 52)";
         currentTurn = X_Turn;
         button.dataset.clicked = "true";
@@ -83,8 +89,11 @@ function checkCondition(id1, id2, id3) {
 function getData(id) {
   return document.getElementById(id).innerText;
 }
+<<<<<<< HEAD
 // gameState.some(e=> {
 //   if(e===""){
 //     console.log('draw')
 //   }
 // })
+=======
+>>>>>>> ca6112a96b93d6aa9b4ef3fb92ae48724fa4c882
