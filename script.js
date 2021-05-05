@@ -12,6 +12,7 @@ function btnclick(id) {
     if (count % 2 != 0) {
       if (currentTurn == X_Turn && filled !== "true") {
         button.innerText = "X";
+        button.style.fontFamily="Patrick Hand, cursive";
         button.style.color = "white";
         currentTurn = O_Turn;
         button.dataset.clicked = "true";
@@ -25,6 +26,7 @@ function btnclick(id) {
     else {
       if (currentTurn == O_Turn && filled !== "true") {
         button.innerText = "O";
+        button.style.fontFamily="Patrick Hand, cursive";
         button.style.color = "rgb(167, 85, 52)";
         currentTurn = X_Turn;
         button.dataset.clicked = "true";
@@ -43,7 +45,9 @@ function btnclick(id) {
     document.getElementById("reset").style.display = "inline";
   }
 }
-
+function styling(){
+  
+}
 function isDraw() {
   let para = document.getElementById("para");
   para.innerText = "Draw!";
